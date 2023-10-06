@@ -1,0 +1,314 @@
+.card {
+  background-color: #000;
+  height: 100vh;
+  position: relative;
+  animation: cardAnimation 0.5s 14s forwards;
+}
+
+.star1 {
+  width: 32px;
+  position: absolute;
+  left: 32px;
+  top: 64px;
+  animation: starAnimation 2s infinite;
+  animation-delay: 1s;
+}
+
+.star2 {
+  width: 32px;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  animation: starAnimation 2s infinite;
+  animation-delay: 2s;
+}
+
+.star3 {
+  width: 32px;
+  position: absolute;
+  right: 32px;
+  bottom: 80px;
+  animation: starAnimation 2s infinite;
+  animation-delay: 1.5s;
+}
+
+.star4 {
+  width: 32px;
+  position: absolute;
+  left: 16px;
+  bottom: 32px;
+  animation: starAnimation 2s infinite;
+  animation-delay: 0.5s;
+}
+
+
+.titleContent {
+  padding: 64px;
+  margin: auto;
+  position: relative;
+}
+
+.titleOne {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  animation: titleOneAnimation1 0.5s 6s forwards;
+}
+
+.textHeaderOne {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  transform: translateY(50px);
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: textHeaderOneAnimation1 0.5s forwards, textHeaderOneAnimation2 0.5s 2s forwards;
+}
+
+.textDescriptionOne {
+  margin: 0;
+  color: #fff;
+  opacity: 0;
+  animation: textDescriptionOneAnimation1 0.5s 2.5s forwards;
+}
+
+@keyframes starAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes titleOneAnimation1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textHeaderOneAnimation1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textHeaderOneAnimation2 {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes textDescriptionOneAnimation1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.titleTwo {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: titleTwoAnimation1 0.5s 6.5s forwards, titleTwoAnimation2 0.5s 14s forwards;
+}
+
+.textHeaderTwo {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 16px;
+  animation: textHeaderTwoAnimation1 0.5s 9.5s forwards;
+}
+
+.imageShuffle {
+  position: absolute;
+  left: 0;
+  top: calc(-50% - 120px);
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageShuffle1 {
+  width: 300px;
+  transform: scale(0);
+  transform-origin: center center;
+  animation: imageShuffleAnimation1 1s 10s forwards ease-in-out;
+}
+
+.imageShuffle2 {
+  width: 300px;
+  transform: scale(0);
+  transform-origin: center center;
+  animation: imageShuffleAnimation1 1s 11s forwards ease-in-out;
+}
+
+.imageShuffle3 {
+  width: 300px;
+  transform: scale(0);
+  transform-origin: center center;
+  animation: imageShuffleAnimation1 1s 12s forwards ease-in-out;
+}
+
+.imageShuffle4 {
+  width: 300px;
+  transform: scale(0);
+  transform-origin: center center;
+  animation: imageShuffleAnimation1 1s 13s forwards ease-in-out;
+}
+
+@keyframes titleTwoAnimation1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titleTwoAnimation2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textHeaderTwoAnimation1 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes imageShuffleAnimation1 {
+  0% {
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(360deg);
+  }
+  100% {
+    transform: scale(0) rotate(0deg);
+  }
+}
+
+
+@keyframes cardAnimation {
+  0% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #61b627;
+  }
+}
+
+.titleThree {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: titleThreeAnimation1 0.5s 14.5s ease-in-out forwards;
+}
+
+.imageResult {
+  width: 300px;
+  margin-bottom: 16px;
+  transform: scale(0);
+  animation: imageResultAnimation1 1s 15s ease-in-out forwards, imageResultAnimation2 3s 16s ease-in-out infinite;
+}
+
+.textHeaderThree {
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 16px;
+  opacity: 1;
+  transform: scale(1.5);
+  animation: textHeaderThreeAnimation1 3s 15s ease-out forwards;
+}
+
+.textDescriptionThree {
+  margin: 0;
+  color: #000;
+  opacity: 0;
+  animation: textDescriptionOneAnimation1 0.5s 19s forwards;
+}
+
+@keyframes titleThreeAnimation1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imageResultAnimation1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes imageResultAnimation2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes textHeaderThreeAnimation1 {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes textDescriptionOneAnimation1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
