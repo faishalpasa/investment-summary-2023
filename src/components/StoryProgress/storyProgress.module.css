@@ -1,0 +1,35 @@
+.progressContainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  margin: 8px;
+}
+
+.progress {
+  height: 4px;
+  flex: 1;
+  border-radius: 16px;
+  background-color: #fff;
+  position: relative;
+}
+
+.progressLine {
+  background-color: #a0a0a0;
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  animation: progressLineAnimation linear forwards;
+}
+
+@keyframes progressLineAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

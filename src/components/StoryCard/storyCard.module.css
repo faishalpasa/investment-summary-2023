@@ -255,7 +255,7 @@
   margin-bottom: 16px;
   opacity: 1;
   transform: scale(1.5);
-  animation: textHeaderThreeAnimation1 3s 15s ease-out forwards;
+  animation: textHeaderThreeAnimation1 1s 18s ease-out forwards;
 }
 
 .textDescriptionThree {
