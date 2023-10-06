@@ -15,10 +15,14 @@ const App = () => {
   useEffect(() => {
     window.addEventListener('mousedown', handleTouch)
     window.addEventListener('mouseup', handleTouch)
+    window.addEventListener('touchstart', handleTouch)
+    window.addEventListener('touchend', handleTouch)
 
     return () => {
       window.removeEventListener('mousedown', handleTouch)
       window.removeEventListener('mouseup', handleTouch)
+      window.removeEventListener('touchstart', handleTouch)
+      window.removeEventListener('touchend', handleTouch)
     }
   }, [])
 
