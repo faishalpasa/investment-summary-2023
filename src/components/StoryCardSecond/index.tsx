@@ -31,7 +31,7 @@ const StoryCardSecond = ({ isPaused, onFinish }: StoryCardSecondProps) => {
   useEffect(() => {
     if (countdown <= 0) {
       clearInterval(interval)
-      // onFinish?.()
+      onFinish?.()
     }
   }, [countdown, onFinish])
 
