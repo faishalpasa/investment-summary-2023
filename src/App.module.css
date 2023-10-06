@@ -4,4 +4,9 @@
   height: 100vh;
   margin: auto;
   position: relative;
+  overflow: hidden;
+}
+
+.replayButton {
+  padding-top: 50%;
 }

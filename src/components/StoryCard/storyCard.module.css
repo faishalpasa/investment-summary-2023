@@ -41,6 +41,17 @@
   animation-delay: 0.5s;
 }
 
+@keyframes starAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 .titleContent {
   padding: 64px;
@@ -65,26 +76,14 @@
   transform: translateY(50px);
   margin-bottom: 16px;
   opacity: 0;
-  animation: textHeaderOneAnimation1 0.5s forwards, textHeaderOneAnimation2 0.5s 2s forwards;
+  animation: textHeaderOneAnimation1 0.5s forwards, textHeaderOneAnimation2 0.5s 3s forwards;
 }
 
 .textDescriptionOne {
   margin: 0;
   color: #fff;
   opacity: 0;
-  animation: textDescriptionOneAnimation1 0.5s 2.5s forwards;
-}
-
-@keyframes starAnimation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-  }
+  animation: textDescriptionOneAnimation1 0.5s 3.5s forwards;
 }
 
 @keyframes titleOneAnimation1 {
