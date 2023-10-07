@@ -224,6 +224,10 @@
   animation: resultSmallContainerAnimation4 1s 16s ease-out forwards;
 }
 
+.smallContainer5 {
+  animation: resultSmallContainerAnimation5 1s 17s ease-out forwards;
+}
+
 .imageResultSmall {
   width: 50px;
   transform: scale(1);
@@ -294,6 +298,15 @@
   }
   100% {
     transform: translateY(-50%) rotate(30deg);
+  }
+}
+
+@keyframes resultSmallContainerAnimation5 {
+  0% {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(60deg);
   }
 }
 

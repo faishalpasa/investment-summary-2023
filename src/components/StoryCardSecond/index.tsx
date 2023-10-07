@@ -161,6 +161,28 @@ const StoryCardSecond = ({ isPaused, onFinish }: StoryCardSecondProps) => {
               4. Lorem Ipsum
             </p>
           </div>
+          <div
+            className={`${classes.resultSmallContainer} ${classes.smallContainer5}`}
+            style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+          >
+            <img
+              src={`${process.env.REACT_APP_ASSET_URL}/images/cat-6.png`}
+              alt="result"
+              className={classes.imageResultSmall}
+              style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+            />
+            <p
+              className={classes.textResult}
+              style={{
+                animationDelay: '18s',
+                animationPlayState: isPaused ? 'paused' : 'running',
+                transform: 'rotate(-60deg)',
+                transformOrigin: 'left center',
+              }}
+            >
+              5. Lorem Ipsum
+            </p>
+          </div>
         </div>
       </div>
     </div>
