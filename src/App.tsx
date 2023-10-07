@@ -34,12 +34,14 @@ const App = () => {
 
   return (
     <div className={classes.app}>
-      <StoryProgress isPaused={animationPaused} />
+      {cardIndex < 2 && (
+        <StoryProgress isPaused={animationPaused} />
+      )}
       {cardIndex === 0 && (
         <StoryCard isPaused={animationPaused} onFinish={handleStoryFinish} />
       )}
       {cardIndex === 1 && (
-        <StoryCardSecond isPaused={animationPaused} onFinish={handleStoryFinish} />
+      <StoryCardSecond isPaused={animationPaused} onFinish={handleStoryFinish} />
       )}
       {cardIndex === 2 && (
         <div className={classes.replayButton}>

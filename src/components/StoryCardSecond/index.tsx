@@ -65,23 +65,101 @@ const StoryCardSecond = ({ isPaused, onFinish }: StoryCardSecondProps) => {
       <div className={classes.titleThree} style={{ animationPlayState: isPaused ? 'paused' : 'running' }}>
         <div className={classes.titleContent} style={{ animationPlayState: isPaused ? 'paused' : 'running' }}>
           <div className={classes.resultContainer}>
-            <img src={`${process.env.REACT_APP_ASSET_URL}/images/cat-6.png`} alt="result" className={classes.imageResult} style={{ animationPlayState: isPaused ? 'paused' : 'running' }} />
+            <img
+              src={`${process.env.REACT_APP_ASSET_URL}/images/cat-6.png`}
+              alt="result"
+              className={classes.imageResult}
+              style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+            />
           </div>
-          <div className={`${classes.resultSmallContainer} ${classes.smallContainer1}`} style={{ animationPlayState: isPaused ? 'paused' : 'running' }}>
-            <img src={`${process.env.REACT_APP_ASSET_URL}/images/cat-2.png`} alt="result" className={classes.imageResultSmall} style={{ animationPlayState: isPaused ? 'paused' : 'running' }} />
-            <p className={classes.textResult} style={{ animationDelay: '14s', animationPlayState: isPaused ? 'paused' : 'running' }}>1. Lorem Ipsum</p>
+          <div
+            className={`${classes.resultSmallContainer} ${classes.smallContainer1}`}
+            style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+          >
+            <img
+              src={`${process.env.REACT_APP_ASSET_URL}/images/cat-2.png`}
+              alt="result"
+              className={classes.imageResultSmall}
+              style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+            />
+            <p
+              className={classes.textResult}
+              style={{
+                animationDelay: '14s',
+                animationPlayState: isPaused ? 'paused' : 'running',
+                transform: 'rotate(60deg)',
+                transformOrigin: 'left center',
+              }}
+            >
+              1. Lorem Ipsum
+            </p>
           </div>
-          <div className={`${classes.resultSmallContainer} ${classes.smallContainer2}`} style={{ animationPlayState: isPaused ? 'paused' : 'running' }}>
-            <img src={`${process.env.REACT_APP_ASSET_URL}/images/cat-3.png`} alt="result" className={classes.imageResultSmall} style={{ animationPlayState: isPaused ? 'paused' : 'running' }} />
-            <p className={classes.textResult} style={{ animationDelay: '15s', animationPlayState: isPaused ? 'paused' : 'running' }}>2. Lorem Ipsum</p>
+          <div
+            className={`${classes.resultSmallContainer} ${classes.smallContainer2}`}
+            style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+          >
+            <img
+              src={`${process.env.REACT_APP_ASSET_URL}/images/cat-3.png`}
+              alt="result"
+              className={classes.imageResultSmall}
+              style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+            />
+            <p
+              className={classes.textResult}
+              style={{
+                animationDelay: '15s',
+                animationPlayState: isPaused ? 'paused' : 'running',
+                transform: 'rotate(30deg)',
+                transformOrigin: 'left center',
+              }}
+            >
+              2. Lorem Ipsum
+            </p>
           </div>
-          <div className={`${classes.resultSmallContainer} ${classes.smallContainer3}`} style={{ animationPlayState: isPaused ? 'paused' : 'running' }}>
-            <img src={`${process.env.REACT_APP_ASSET_URL}/images/cat-4.png`} alt="result" className={classes.imageResultSmall} style={{ animationPlayState: isPaused ? 'paused' : 'running' }} />
-            <p className={classes.textResult} style={{ animationDelay: '16s', animationPlayState: isPaused ? 'paused' : 'running' }}>3. Lorem Ipsum</p>
+          <div
+            className={`${classes.resultSmallContainer} ${classes.smallContainer3}`}
+            style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+          >
+            <img
+              src={`${process.env.REACT_APP_ASSET_URL}/images/cat-4.png`}
+              alt="result"
+              className={classes.imageResultSmall}
+              style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+            />
+            <p
+              className={classes.textResult}
+              style={{
+                animationDelay: '16s',
+                animationPlayState: isPaused ? 'paused' : 'running',
+                transform: 'rotate(0deg)',
+                transformOrigin: 'left center',
+              }}
+            >
+              3. Lorem Ipsum
+
+            </p>
           </div>
-          <div className={`${classes.resultSmallContainer} ${classes.smallContainer4}`} style={{ animationPlayState: isPaused ? 'paused' : 'running' }}>
-            <img src={`${process.env.REACT_APP_ASSET_URL}/images/cat-5.png`} alt="result" className={classes.imageResultSmall} style={{ animationPlayState: isPaused ? 'paused' : 'running' }} />
-            <p className={classes.textResult} style={{ animationDelay: '17s', animationPlayState: isPaused ? 'paused' : 'running' }}>4. Lorem Ipsum</p>
+          <div
+            className={`${classes.resultSmallContainer} ${classes.smallContainer4}`}
+            style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+          >
+            <img
+              src={`${process.env.REACT_APP_ASSET_URL}/images/cat-5.png`}
+              alt="result"
+              className={classes.imageResultSmall}
+              style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+            />
+            <p
+              className={classes.textResult}
+              style={{
+                animationDelay: '17s',
+                animationPlayState: isPaused ? 'paused' : 'running',
+                transform: 'rotate(-30deg)',
+                transformOrigin: 'left center',
+              }}
+            >
+              4. Lorem Ipsum
+            </p>
           </div>
         </div>
       </div>
