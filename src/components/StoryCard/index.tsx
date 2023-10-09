@@ -19,8 +19,8 @@ const StoryCard = ({ isPaused, onFinish }: StoryCardProps) => {
     if (!isPaused) {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       interval = setInterval(() => {
-        setCountdown((prevState) => prevState - 1)
-      }, 1000)
+        setCountdown((prevState) => +(prevState - 0.01).toFixed(2))
+      }, 10)
     } else {
       clearInterval(interval)
     }
